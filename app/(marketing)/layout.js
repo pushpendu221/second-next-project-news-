@@ -4,5 +4,5 @@ export const metadata = {
 };
 
 export default function MarketingLayout({ children }) {
-  return <body>{children}</body>;
+  return <main>{children}</main>;
 }
