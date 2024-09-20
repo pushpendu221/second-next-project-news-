@@ -1,15 +1,19 @@
-import Link from 'next/link';
+import Link from "next/link";
+import NavList from "./nav-list";
 
 export default function MainHeader() {
   return (
     <header id="main-header">
       <div id="logo">
-        <Link href="/">NextNews</Link>
+        <NavList href="/" title="NextNews" />
       </div>
       <nav>
         <ul>
           <li>
-            <Link href="/news">News</Link>
+            <NavList href="/news" title="News" />
+          </li>
+          <li>
+            <NavList href="/archive" title="Archive" />
           </li>
         </ul>
       </nav>
